@@ -46,6 +46,8 @@ Student-Management-System/
 
 🚧 Currently Under Development
 
+***   Update the database credentials in database.py before running the project.
+
 ---
 
 ## 👨‍💻 Developer
