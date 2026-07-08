@@ -36,7 +36,6 @@ def add_student(connection):
         print("Error :", error)
         connection.rollback()
 
-
 def view_students(connection):
     try:
         cursor = connection.cursor()
@@ -48,8 +47,18 @@ def view_students(connection):
         rows = cursor.fetchall()
 
         if rows:
+
+            print("\n========== STUDENT LIST ==========\n")
+
             for row in rows:
-                print(row)
+                print(f"Student ID      : {row[0]}")
+                print(f"Student Name    : {row[1]}")
+                print(f"Guardian Name   : {row[2]}")
+                print(f"Email ID        : {row[3]}")
+                print(f"Contact Number  : {row[4]}")
+                print(f"Department      : {row[5]}")
+                print("-" * 40)
+
         else:
             print("No Student Found!")
 
