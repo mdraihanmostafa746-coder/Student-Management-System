@@ -12,4 +12,3 @@ CREATE TABLE students(
     contact_no VARCHAR(30) UNIQUE,
     department_name VARCHAR(70) NOT NULL
 );
-
